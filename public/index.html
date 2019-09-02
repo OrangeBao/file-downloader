@@ -6,18 +6,22 @@
     </head>
     <body>
         <a href="#" onclick="triggerDownload('data.json')">下载成功</a>
+        <a href="#" onclick="triggerDownload('http:/\/mirrors.aliyun.com/docker-toolbox/windows/docker-toolbox/DockerToolbox-18.03.0-ce.exe', 'DockerToolbox-18.03.0-ce.exe')">
+            下载网络文件
+        </a>
         <a href="#" onclick="triggerDownload('data2.json')">下载失败</a>
     </body>
     <script src="file-downloader.js"></script>
     <script>
-       function triggerDownload (url) {
+       function triggerDownload (url, fileName) {
             downLoaderByUrl(url, {
                 beforeSend: function(xhr) {
                     xhr.setRequestHeader('text-name', 'orangeBao')
                 },
                 errorHandle: function(e) {
                     return '下载失败' + e.status
-                }
+                },
+                fileName: fileName
             })
        }
     </script>
