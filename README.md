@@ -22,4 +22,23 @@
     </html>
 ```
 
+
+
+## 方法
+
+| 名称         | 描述                                       | 参数                                    |
+| ------------ | -------------------------------------------- | --------------------------------------- |
+| downLoaderByUrl(string, object) | 触发下载 | url：下载链接； options：配置项                    |
+
+
+## options说明
+
+| 名称       | 说明                                   |
+| :-------- | ------- |
+| beforeSend | 发起下载请求之前，可以设置header  |
+| errorHandle  | 错误情况的钩子，返回String用于提示   |
+
+
+
+
 ![iamge](https://github.com/OrangeBao/file-downloader/blob/master/demo.png) 

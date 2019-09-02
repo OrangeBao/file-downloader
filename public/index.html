@@ -5,7 +5,20 @@
         <title>Test</title>
     </head>
     <body>
-        <a href="#" onclick="downLoaderByUrl('data.json')">下载</a>
+        <a href="#" onclick="triggerDownload('data.json')">下载成功</a>
+        <a href="#" onclick="triggerDownload('data2.json')">下载失败</a>
     </body>
     <script src="file-downloader.js"></script>
+    <script>
+       function triggerDownload (url) {
+            downLoaderByUrl(url, {
+                beforeSend: function(xhr) {
+                    xhr.setRequestHeader('text-name', 'orangeBao')
+                },
+                errorHandle: function(e) {
+                    return '下载失败' + e.status
+                }
+            })
+       }
+    </script>
 </html>
