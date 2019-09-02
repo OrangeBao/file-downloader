@@ -22,4 +22,4 @@
     </html>
 ```
 
-![iamge](https://orangebao.github.io/downloader/demo.png) 
+![iamge](https://github.com/OrangeBao/file-downloader/blob/master/demo.png) 
