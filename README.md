@@ -4,8 +4,6 @@
 
 ## 安装
 使用<script>标签引入
-或者
-`npm install file-downloader`
 
 ## 使用
 ```
