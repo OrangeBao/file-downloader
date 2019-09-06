@@ -1,6 +1,6 @@
 {
-  "name": "downloader",
-  "version": "1.0.0",
+  "name": "@cmss-bfs/xhrdownloader",
+  "version": "1.0.0-rc1",
   "description": "",
   "main": "index.js",
   "scripts": {

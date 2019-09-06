@@ -3,9 +3,13 @@
 在当前页面发起文件下载请求，可以设置下载请求的header信息。
 
 ## 安装
-使用<script>标签引入
+使用script标签引入，或者
+```
+npm install @cmss-bfs/xhrdownloader
+```
 
 ## 使用
+sdn方式：
 ```
     <html>
     <body>
@@ -18,6 +22,13 @@
         </body>
         <script src="file-downloader.js"></script>
     </html>
+```
+
+es6：
+```
+import downloader from '@cmss-bfs/xhrdownloader'
+
+downloader('data.json')
 ```
 
 
